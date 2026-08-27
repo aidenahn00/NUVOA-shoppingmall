@@ -1,0 +1,265 @@
+.smart-header,
+.smart-overlay-menu,
+.gnb2depth-smart {
+    display: none;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+.header-top {
+    height: 100px;
+}
+
+.header-top>.common-frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+}
+
+.lnb {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu {
+    display: flex;
+    gap: 1rem;
+
+    font-size: var(--fs-body2);
+}
+
+.user-menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .25rem;
+}
+
+.user-menu img {
+    height: 1.5rem;
+}
+
+.lnb a span {
+    display: none;
+}
+
+
+.header-bottom {
+    position: relative;
+}
+
+.gnb {
+    display: flex;
+    gap: var(--space-normal);
+    font-weight: var(--fw2);
+
+    height: 50px;
+}
+
+.gnb>li>a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.gnb>li>a:hover {
+    color: var(--sub-color);
+}
+
+
+.gnb>li:hover .gnb2depth {
+    display: block;
+}
+
+.gnb2depth {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    background-color: #fff;
+    padding: var(--space-x-large) 0;
+    display: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+.gnb2depth .common-frame {
+    display: flex;
+    gap: var(--space-normal);
+}
+
+.gnb2depth a:hover {
+    color: var(--sub-color);
+}
+
+.gnb2depth .common-frame>section {
+    flex: 1;
+}
+
+.gnb2depth .common-frame>section h4 {
+    margin-bottom: 1.5rem;
+}
+
+.gnb2depth .common-frame>section ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-normal);
+    font-weight: var(--fw1);
+}
+
+
+@media (max-width: 1024px) {
+    .pc {
+        display: none;
+    }
+    .user-menu span {
+        display: none;
+    }
+
+    .smart-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    
+    .smart-header,
+    .smart-overlay-menu-1 {
+        display: block;
+
+        height: 5rem;
+    }
+
+    .smart-header .common-frame,
+    .smart-overlay-menu-1 .common-frame {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+
+        position: relative;
+    }
+
+    .btn-menu {
+        position: absolute;
+        top: 50%;
+        right: var(--space-x-large);
+        transform: translateY(-50%);
+
+        line-height: 0;
+    }
+
+
+    .smart-overlay-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 110;
+        
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+
+        display: flex;
+        flex-direction: column;
+
+        transform: translateX(100%);
+        transition: all .6s ease 0s;
+    }
+    .smart-overlay-menu.on {
+        transform: translateX(0%);
+    }
+    .smart-overlay-menu-bottom {
+        overflow-y: auto;
+        flex-grow: 1;
+        height: 100%;
+    }
+
+    .btn-menu-close {
+        position: absolute;
+        top: 50%;
+        right: var(--space-x-large);
+        transform: translateY(-50%);
+        line-height: 0;
+    }
+
+    .smart-overlay-menu-1 .common-frame {
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+    }
+
+    .smart-overlay-menu-2 .common-frame {
+        height: 4.285rem;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gnb-smart {
+        display: flex;
+        height: 4.285rem;
+        gap: 1rem;
+
+        justify-self: center;
+    }
+
+    .gnb-smart>li.on {
+        color: var(--sub-color);
+    }
+
+    .gnb-smart a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-weight: var(--fw2);
+    }
+
+    .gnb2depth-smart {
+        padding: 1rem 0;
+    }
+    .gnb2depth-smart.on {
+        display: block;
+    }
+
+    .gnb2depth-smart .common-frame {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem 1rem;
+    }
+    .gnb2depth-smart h4 {
+        font-weight: var(--fw2);
+        margin-bottom: 1.428rem;
+        padding-bottom: 1.428rem;
+
+
+        border-bottom: 1px solid var(--gray-400);
+    }
+    .gnb2depth-smart ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .gnb2depth-smart .common-frame {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

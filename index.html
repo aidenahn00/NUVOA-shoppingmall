@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUVOA 쇼핑몰 - 취업용 포트폴리오</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/header.js" defer></script>
+
+</head>
+
+<body>
+    <!-- 데스크탑용 헤더 -->
+    <header class="pc">
+        <div class="header-top">
+            <div class="common-frame">
+                <div class="logo">
+                    <a href="./index.html">
+                        <figure><img src="./img/logo.svg" alt="NUVOA 쇼핑몰 로고"></figure>
+                    </a>
+                </div>
+                <div class="lnb">
+                    <ul class="user-menu">
+                        <li><a href="#"><img src="./img/icn-menu-login.svg" alt="로그인"><span>로그인</span></a></li>
+                        <li><a href="#"><img src="./img/icn-menu-create-account.svg" alt="회원가입"><span>회원가입</span></a>
+                        </li>
+                        <li><a href="#"><img src="./img/icn-griddy-icons_search.svg" alt="검색"><span>검색</span></a></li>
+                        <li><a href="#"><img src="./img/icn-menu-cart.svg" alt="장바구니"><span>장바구니</span></a></li>
+                        <li><a href="#"><img src="./img/icn-menu-mypage.svg" alt="마이페이지"><span>마이페이지</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="common-frame">
+                <ul class="gnb">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">Living Room</a></h4>
+                                    <ul>
+                                        <li><a href="#">Sofas</a></li>
+                                        <li><a href="#">Coffee Tables</a></li>
+                                        <li><a href="#">TV Units</a></li>
+                                        <li><a href="#">Side Tables</a></li>
+                                        <li><a href="#">Lounge Chairs</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Bed Room</a></h4>
+                                    <ul>
+                                        <li><a href="#">Beds</a></li>
+                                        <li><a href="#">Mattreses</a></li>
+                                        <li><a href="#">Nightstands</a></li>
+                                        <li><a href="#">Dressers</a></li>
+                                        <li><a href="#">Wordrobes</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Dining</a></h4>
+                                    <ul>
+                                        <li><a href="#">Dining Tables</a></li>
+                                        <li><a href="#">Dining Chairs</a></li>
+                                        <li><a href="#">Bar Tables</a></li>
+                                        <li><a href="#">Sideboards</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Office</a></h4>
+                                    <ul>
+                                        <li><a href="#">Desks</a></li>
+                                        <li><a href="#">Office Chairs</a></li>
+                                        <li><a href="#">Cabinets</a></li>
+                                        <li><a href="#">Shelves</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Lighting</a></h4>
+                                    <ul>
+                                        <li><a href="#">Pendant</a></li>
+                                        <li><a href="#">Floor Lamps</a></li>
+                                        <li><a href="#">Table Lamps</a></li>
+                                        <li><a href="#">Wall Lights</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Decor</a></h4>
+                                    <ul>
+                                        <li><a href="#">Mirrors</a></li>
+                                        <li><a href="#">Rugs</a></li>
+                                        <li><a href="#">Vases</a></li>
+                                        <li><a href="#">Artwork</a></li>
+                                        <li><a href="#">Chshions</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Storage</a></h4>
+                                    <ul>
+                                        <li><a href="#">Bookshelves</a></li>
+                                        <li><a href="#">Cabinets</a></li>
+                                        <li><a href="#">Console Tables</a></li>
+                                        <li><a href="#">Storage Boxes</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Collection</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">Modern</a></h4>
+                                    <ul>
+                                        <li><a href="#">Urban Living</a></li>
+                                        <li><a href="#">Clean Lines</a></li>
+                                        <li><a href="#">Monotone</a></li>
+                                        <li><a href="#">Contemporary</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Scandinavian</a></h4>
+                                    <ul>
+                                        <li><a href="#">Natural Wood</a></li>
+                                        <li><a href="#">Soft Tone</a></li>
+                                        <li><a href="#">Cozy Living</a></li>
+                                        <li><a href="#">Nordic Essentials</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Japandi</a></h4>
+                                    <ul>
+                                        <li><a href="#">Zen Living</a></li>
+                                        <li><a href="#">Minimal Balance</a></li>
+                                        <li><a href="#">Organic Materials</a></li>
+                                        <li><a href="#">Warm Texture</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Luxury</a></h4>
+                                    <ul>
+                                        <li><a href="#">Premium Line</a></li>
+                                        <li><a href="#">Signature Series</a></li>
+                                        <li><a href="#">Marble Edition</a></li>
+                                        <li><a href="#">Leather Collection</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Limited Edition</a></h4>
+                                    <ul>
+                                        <li><a href="#">Collaboration</a></li>
+                                        <li><a href="#">Seasonal Edition</a></li>
+                                        <li><a href="#">Exclusive Design</a></li>
+                                        <li><a href="#">Collector Series</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">New Arrivals</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">By Date</a></h4>
+                                    <ul>
+                                        <li><a href="#">This Week</a></li>
+                                        <li><a href="#">This Month</a></li>
+                                        <li><a href="#">Last Month</a></li>
+                                        <li><a href="#">Archive</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">By Category</a></h4>
+                                    <ul>
+                                        <li><a href="#">Furniture</a></li>
+                                        <li><a href="#">Lighting</a></li>
+                                        <li><a href="#">Decor</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Trending</a></h4>
+                                    <ul>
+                                        <li><a href="#">Most Viewed</a></li>
+                                        <li><a href="#">Best Rated</a></li>
+                                        <li><a href="#">Popular This Week</a></li>
+                                        <li><a href="#">Staff Picks</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Coming Soon</a></h4>
+                                    <ul>
+                                        <li><a href="#">Preview</a></li>
+                                        <li><a href="#">Pre-order</a></li>
+                                        <li><a href="#">Launch Schedule</a></li>
+                                        <li><a href="#">Notify Me</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Lookbook</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">By Space</a></h4>
+                                    <ul>
+                                        <li><a href="#">Living Room</a></li>
+                                        <li><a href="#">Bedroom</a></li>
+                                        <li><a href="#">Dining Room</a></li>
+                                        <li><a href="#">Home Office</a></li>
+                                        <li><a href="#">Outdoor</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">By Style</a></h4>
+                                    <ul>
+                                        <li><a href="#">Modern</a></li>
+                                        <li><a href="#">Scandinavian</a></li>
+                                        <li><a href="#">Japandi</a></li>
+                                        <li><a href="#">Luxury</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Inspiration</a></h4>
+                                    <ul>
+                                        <li><a href="#">Small Spaces</a></li>
+                                        <li><a href="#">Family Home</a></li>
+                                        <li><a href="#">Studio Apartment</a></li>
+                                        <li><a href="#">Penthouse</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Customer Gallery</a></h4>
+                                    <ul>
+                                        <li><a href="#">Real Homes</a></li>
+                                        <li><a href="#">Reviews</a></li>
+                                        <li><a href="#">Before &amp; After</a></li>
+                                        <li><a href="#">Community Picks</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">Brand</a></h4>
+                                    <ul>
+                                        <li><a href="#">Brand Story</a></li>
+                                        <li><a href="#">Vision</a></li>
+                                        <li><a href="#">Philosophy</a></li>
+                                        <li><a href="#">Identity</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Craftsmanship</a></h4>
+                                    <ul>
+                                        <li><a href="#">Materials</a></li>
+                                        <li><a href="#">Manufacturing</a></li>
+                                        <li><a href="#">Quality Control</a></li>
+                                        <li><a href="#">Sustainability</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Designers</a></h4>
+                                    <ul>
+                                        <li><a href="#">Design Team</a></li>
+                                        <li><a href="#">Collaborations</a></li>
+                                        <li><a href="#">Interviews</a></li>
+                                        <li><a href="#">Awards</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Journal</a></h4>
+                                    <ul>
+                                        <li><a href="#">News</a></li>
+                                        <li><a href="#">Design Insight</a></li>
+                                        <li><a href="#">Lifestyle</a></li>
+                                        <li><a href="#">Press</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                        <div class="gnb2depth">
+                            <div class="common-frame">
+                                <section>
+                                    <h4><a href="#">Customer Support</a></h4>
+                                    <ul>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Live Chat</a></li>
+                                        <li><a href="#">Email Support</a></li>
+                                        <li><a href="#">Business Inquiry</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Help Center</a></h4>
+                                    <ul>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Shipping</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                        <li><a href="#">Warranty</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Stores</a></h4>
+                                    <ul>
+                                        <li><a href="#">Showrooms</a></li>
+                                        <li><a href="#">Store Locator</a></li>
+                                        <li><a href="#">Reservations</a></li>
+                                        <li><a href="#">Opening Hours</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h4><a href="#">Membership</a></h4>
+                                    <ul>
+                                        <li><a href="#">Benefits</a></li>
+                                        <li><a href="#">Events</a></li>
+                                        <li><a href="#">Point Guide</a></li>
+                                        <li><a href="#">Newsletter</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 패드 / 모바일용 전체 메가 메뉴 -->
+    <div class="smart-header">
+        <div class="common-frame">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="NUVOA 로고 메인페이지로 이동">
+                </a>
+            </div>
+            <div class="btn-menu">
+                <a href="#">
+                    <img src="./img/icn-menu.svg" alt="전체메뉴 열기">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 패드 / 모바일용 헤더 -->
+    <div class="smart-overlay-menu">
+
+        <div class="smart-overlay-menu-1">
+            <div class="common-frame">
+                <div class="logo">
+                    <a href="./index.html">
+                        <figure><img src="./img/logo.svg" alt="NUVOA 쇼핑몰 로고"></figure>
+                    </a>
+                </div>
+                <div class="btn-menu-close"><a href="#"><img src="./img/icn-menu-close.svg" alt="전체메뉴 닫기"></a></div>
+            </div>
+        </div>
+        <div class="smart-overlay-menu-2">
+            <div class="common-frame">
+                <ul class="user-menu">
+                    <li><a href="#"><img src="./img/icn-menu-login.svg" alt="로그인"><span>로그인</span></a></li>
+                    <li><a href="#"><img src="./img/icn-menu-create-account.svg" alt="회원가입"><span>회원가입</span></a>
+                    </li>
+                    <li><a href="#"><img src="./img/icn-griddy-icons_search.svg" alt="검색"><span>검색</span></a></li>
+                    <li><a href="#"><img src="./img/icn-menu-cart.svg" alt="장바구니"><span>장바구니</span></a></li>
+                    <li><a href="#"><img src="./img/icn-menu-mypage.svg" alt="마이페이지"><span>마이페이지</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="smart-overlay-menu-top">
+            <div class="common-frame">
+                <ul class="gnb-smart">
+                    <li><a href="#">Home</a></li>
+                    <li class="on"><a href="#">Shop</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Lookbook</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="smart-overlay-menu-bottom">
+            <div class="gnb2depth-smart on">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">Living Room</a></h4>
+                        <ul>
+                            <li><a href="#">Sofas</a></li>
+                            <li><a href="#">Coffee Tables</a></li>
+                            <li><a href="#">TV Units</a></li>
+                            <li><a href="#">Side Tables</a></li>
+                            <li><a href="#">Lounge Chairs</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Bed Room</a></h4>
+                        <ul>
+                            <li><a href="#">Beds</a></li>
+                            <li><a href="#">Mattreses</a></li>
+                            <li><a href="#">Nightstands</a></li>
+                            <li><a href="#">Dressers</a></li>
+                            <li><a href="#">Wordrobes</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Dining</a></h4>
+                        <ul>
+                            <li><a href="#">Dining Tables</a></li>
+                            <li><a href="#">Dining Chairs</a></li>
+                            <li><a href="#">Bar Tables</a></li>
+                            <li><a href="#">Sideboards</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Office</a></h4>
+                        <ul>
+                            <li><a href="#">Desks</a></li>
+                            <li><a href="#">Office Chairs</a></li>
+                            <li><a href="#">Cabinets</a></li>
+                            <li><a href="#">Shelves</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Lighting</a></h4>
+                        <ul>
+                            <li><a href="#">Pendant</a></li>
+                            <li><a href="#">Floor Lamps</a></li>
+                            <li><a href="#">Table Lamps</a></li>
+                            <li><a href="#">Wall Lights</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Decor</a></h4>
+                        <ul>
+                            <li><a href="#">Mirrors</a></li>
+                            <li><a href="#">Rugs</a></li>
+                            <li><a href="#">Vases</a></li>
+                            <li><a href="#">Artwork</a></li>
+                            <li><a href="#">Chshions</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Storage</a></h4>
+                        <ul>
+                            <li><a href="#">Bookshelves</a></li>
+                            <li><a href="#">Cabinets</a></li>
+                            <li><a href="#">Console Tables</a></li>
+                            <li><a href="#">Storage Boxes</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="gnb2depth-smart">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">Modern</a></h4>
+                        <ul>
+                            <li><a href="#">Urban Living</a></li>
+                            <li><a href="#">Clean Lines</a></li>
+                            <li><a href="#">Monotone</a></li>
+                            <li><a href="#">Contemporary</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Scandinavian</a></h4>
+                        <ul>
+                            <li><a href="#">Natural Wood</a></li>
+                            <li><a href="#">Soft Tone</a></li>
+                            <li><a href="#">Cozy Living</a></li>
+                            <li><a href="#">Nordic Essentials</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Japandi</a></h4>
+                        <ul>
+                            <li><a href="#">Zen Living</a></li>
+                            <li><a href="#">Minimal Balance</a></li>
+                            <li><a href="#">Organic Materials</a></li>
+                            <li><a href="#">Warm Texture</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Luxury</a></h4>
+                        <ul>
+                            <li><a href="#">Premium Line</a></li>
+                            <li><a href="#">Signature Series</a></li>
+                            <li><a href="#">Marble Edition</a></li>
+                            <li><a href="#">Leather Collection</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Limited Edition</a></h4>
+                        <ul>
+                            <li><a href="#">Collaboration</a></li>
+                            <li><a href="#">Seasonal Edition</a></li>
+                            <li><a href="#">Exclusive Design</a></li>
+                            <li><a href="#">Collector Series</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="gnb2depth-smart">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">By Date</a></h4>
+                        <ul>
+                            <li><a href="#">This Week</a></li>
+                            <li><a href="#">This Month</a></li>
+                            <li><a href="#">Last Month</a></li>
+                            <li><a href="#">Archive</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">By Category</a></h4>
+                        <ul>
+                            <li><a href="#">Furniture</a></li>
+                            <li><a href="#">Lighting</a></li>
+                            <li><a href="#">Decor</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Trending</a></h4>
+                        <ul>
+                            <li><a href="#">Most Viewed</a></li>
+                            <li><a href="#">Best Rated</a></li>
+                            <li><a href="#">Popular This Week</a></li>
+                            <li><a href="#">Staff Picks</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Coming Soon</a></h4>
+                        <ul>
+                            <li><a href="#">Preview</a></li>
+                            <li><a href="#">Pre-order</a></li>
+                            <li><a href="#">Launch Schedule</a></li>
+                            <li><a href="#">Notify Me</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="gnb2depth-smart">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">By Space</a></h4>
+                        <ul>
+                            <li><a href="#">Living Room</a></li>
+                            <li><a href="#">Bedroom</a></li>
+                            <li><a href="#">Dining Room</a></li>
+                            <li><a href="#">Home Office</a></li>
+                            <li><a href="#">Outdoor</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">By Style</a></h4>
+                        <ul>
+                            <li><a href="#">Modern</a></li>
+                            <li><a href="#">Scandinavian</a></li>
+                            <li><a href="#">Japandi</a></li>
+                            <li><a href="#">Luxury</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Inspiration</a></h4>
+                        <ul>
+                            <li><a href="#">Small Spaces</a></li>
+                            <li><a href="#">Family Home</a></li>
+                            <li><a href="#">Studio Apartment</a></li>
+                            <li><a href="#">Penthouse</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Customer Gallery</a></h4>
+                        <ul>
+                            <li><a href="#">Real Homes</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Before &amp; After</a></li>
+                            <li><a href="#">Community Picks</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="gnb2depth-smart">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">Brand</a></h4>
+                        <ul>
+                            <li><a href="#">Brand Story</a></li>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">Philosophy</a></li>
+                            <li><a href="#">Identity</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Craftsmanship</a></h4>
+                        <ul>
+                            <li><a href="#">Materials</a></li>
+                            <li><a href="#">Manufacturing</a></li>
+                            <li><a href="#">Quality Control</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Designers</a></h4>
+                        <ul>
+                            <li><a href="#">Design Team</a></li>
+                            <li><a href="#">Collaborations</a></li>
+                            <li><a href="#">Interviews</a></li>
+                            <li><a href="#">Awards</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Journal</a></h4>
+                        <ul>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Design Insight</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="gnb2depth-smart">
+                <div class="common-frame">
+                    <section>
+                        <h4><a href="#">Customer Support</a></h4>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Live Chat</a></li>
+                            <li><a href="#">Email Support</a></li>
+                            <li><a href="#">Business Inquiry</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Help Center</a></h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Warranty</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Stores</a></h4>
+                        <ul>
+                            <li><a href="#">Showrooms</a></li>
+                            <li><a href="#">Store Locator</a></li>
+                            <li><a href="#">Reservations</a></li>
+                            <li><a href="#">Opening Hours</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4><a href="#">Membership</a></h4>
+                        <ul>
+                            <li><a href="#">Benefits</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Point Guide</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인 -->
+    <main>
+        <!-- 히어로 배너 슬라이드 -->
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/pc-header1.jpg" alt="차분한 공간, 깊어진 취향">
+                    <img class="pad" src="./img/pad-header1.jpg" alt="차분한 공간, 깊어진 취향">
+                    <img class="mo" src="./img/mo-header1.jpg" alt="차분한 공간, 깊어진 취향">
+                </div>
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/pc-header2.jpg" alt="차분한 공간, 깊어진 취향">
+                    <img class="pad" src="./img/pad-header2.jpg" alt="차분한 공간, 깊어진 취향">
+                    <img class="mo" src="./img/mo-header2.jpg" alt="차분한 공간, 깊어진 취향">
+                </div>
+                <div class="swiper-slide">
+                    <img class="pc" src="./img/pc-header3.jpg" alt="차분한 공간, 깊어진 취향">
+                    <img class="pad" src="./img/pad-header3.jpg" alt="차분한 공간, 깊어진 취향">
+                    <img class="mo" src="./img/mo-header3.jpg" alt="차분한 공간, 깊어진 취향">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script>
+            const station = new Swiper('.hero-slider', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                speed: 1000,
+                loop: true,
+            });
+        </script>
+
+        <div class="banner-line">
+            <div class="common-frame">
+                <span>NOTICE</span>
+                <h4>NUVOA의 새로운 소식과 NOTICE를 확인해보세요.</h4>
+                <p>브랜드의 다양한 소식과 업데이트 내용을 만나보실 수 있습니다.</p>
+                <a href="#">NEW <img src="./img/icn-arrow-right.svg" alt="공지사항 바로가기"></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
