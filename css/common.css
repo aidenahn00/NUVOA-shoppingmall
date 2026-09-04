@@ -89,8 +89,6 @@ main {
 .mo {
     display: none;
 }
-
-
 @media (max-width: 1024px) {
 
     html {
@@ -117,11 +115,10 @@ main {
 
 
 @media (max-width: 860px) {
-.banner-line .common-frame span, 
-.banner-line .common-frame p {
-    display: none;
-} 
-
+    .banner-line .common-frame span,
+    .banner-line .common-frame p {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -146,4 +143,76 @@ main {
         display: block;
     }
 
+}
+
+
+h1 {
+    font-size: var(--fs-h1);
+}
+h2 {
+    font-size: var(--fs-h2);
+}
+h3 {
+    font-size: var(--fs-h3);
+}
+h4 {
+    font-size: var(--fs-h4);
+}
+p {
+    line-height: var(--lh2);
+}
+
+
+
+
+/* 리스트 공통 */
+.title-1 {
+    font-weight: var(--fw2);
+}
+.desc-1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--gray-700);
+}
+.product-name {
+    color: var(--gray-800);
+    font-weight: var(--fw2);
+}
+.product-category {
+    margin-bottom: .5rem;
+    color: var(--gray-700);
+}
+.pay-original {
+    color: var(--gray-500);
+    font-size: var(--fs-body2);
+}
+.pay-original span {
+    text-decoration: line-through;
+}
+.pay-discount {
+    display: flex;
+    align-items: center;
+
+    gap: .5rem;
+}
+.discount {
+    font-style: var(--fs-body2);
+}
+.pay {
+    color: var(--nuvoaorange-500);
+}
+.like-badge {
+    position: absolute;
+    right: .25rem;
+    top: .25rem;
+    font-size: var(--fs-body2);
+
+    display: flex;
+    align-items: center;
+}
+.like-badge.noab {
+    position: initial;
 }

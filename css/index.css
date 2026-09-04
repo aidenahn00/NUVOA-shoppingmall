@@ -20,30 +20,36 @@ h1 {
     width: 100%;
     height: 688px;
 }
+
 @media (max-width: 1024px) {
     .hero-slider {
         height: 900px;
     }
 }
+
 @media (max-width: 768px) {
     .hero-slider {
         height: 768px;
     }
 }
+
 .hero-slider img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .hero-slider .swiper-pagination-bullet-active {
     background: var(--sub-color);
 }
+
 .hero-slider .swiper-horizontal>.swiper-pagination-bullets,
 .hero-slider .swiper-pagination-bullets.swiper-pagination-horizontal,
 .hero-slider .swiper-pagination-custom,
 .swiper-pagination-fraction {
     bottom: 2rem;
 }
+
 .hero-slider .swiper-pagination-bullet {
     width: 52px;
     height: 6px;
@@ -83,8 +89,6 @@ h1 {
     align-items: center;
     border-radius: 20px;
 }
-
-
 @media (max-width: 1297px) {
     .banner-line .common-frame {
         justify-content: space-between;
@@ -97,4 +101,167 @@ h1 {
     .banner-line a {
         white-space: nowrap;
     }
+}
+
+
+
+
+/* 카드 리스트 */
+.con1 .title {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--gray-800);
+}
+.con1 .title h1 {
+    display: block;
+
+    font-size: var(--fs-h1);
+    font-weight: var(--fw2);
+
+}
+.con1 .title p {
+    max-width: 283px;
+    align-self: center;
+    width: 100%;
+    line-height: 1.4;
+}
+.cardlist-wrap {
+    width: 100%;
+}
+.cardlist-wrap img {
+    aspect-ratio: 444/293;
+
+    transition: all .5s ease 0s;
+}
+.cardlist-wrap li:hover img {
+    transform: scale(1.1);
+}
+.cardlist-wrap a {
+    display: block;
+
+    border-radius: 1.25rem;
+    overflow: hidden;
+
+    position: relative;
+}
+.cardlist-wrap a .cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: var(--fs-h2);
+    font-weight: var(--fw2);
+
+    color: #fff;
+
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(210, 210, 210, .5) 50%, rgba(0, 0, 0, .5) 100%);
+
+    transition: all .5s ease 0s;
+
+    opacity: 1;
+    pointer-events: auto;
+}
+.cardlist-wrap a .cover:hover {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+
+/* 스토리 리스트 */
+.storylist li > figure {
+    line-height: 0;
+    border-radius: .5rem;
+    overflow: hidden;
+    margin-bottom: 1.75rem;
+}
+.story-txt {
+    border-bottom: 1px solid dotted var(--gray-300);
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+.story-txt h4 {
+    font-weight: var(--fw2);
+}
+.story-txt p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.story-product figure {
+    width: 6.25rem;
+    height: 6.25rem;
+    position: relative;
+
+    border-radius: .5rem;
+    overflow: hidden;
+    line-height: 0;
+}
+.story-product img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.story-product>a {
+    display: flex;
+    gap: 1rem;
+}
+.sale-txt {
+    display: flex;
+    flex-direction: column;
+
+}
+.story-product-txt {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+
+
+/* special sale */
+.sale {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    gap: 3rem 1rem;
+}
+@media (max-width: 768px) {
+    .sale {
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+    }
+}
+.con3 {
+    padding: 6rem 0;
+}
+.sale li figure {
+    line-height: 0;
+    margin-bottom: 1.75rem;
+}
+.sale li figure img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.sale-txt {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
