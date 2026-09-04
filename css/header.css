@@ -266,3 +266,19 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+@media (max-width: 423px) {
+    .common-frame {
+        overflow-x: auto;
+    }
+    .gnb-smart {
+        justify-self: unset;
+    }
+    .gnb-smart>li:last-of-type>a{
+        padding-right: 1rem;
+    }
+    .gnb-smart a {
+        text-wrap: nowrap;
+    }
+}

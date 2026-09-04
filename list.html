@@ -10,19 +10,14 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/list.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <script src="./js/index.js" defer></script>
+    <script src="./js/list.js" defer></script>
     <script src="./js/header.js" defer></script>
-
-    <!-- 제품 정보 -->
-    <script src="./js/product.js" defer></script>
-    <script src="./js/product-control.js" defer></script>
 </head>
 
 <body>
-
     <!-- 데스크탑용 헤더 -->
     <header class="pc">
         <div class="header-top">
@@ -369,6 +364,7 @@
     </div>
     <!-- 패드 / 모바일용 헤더 -->
     <div class="smart-overlay-menu">
+
         <div class="smart-overlay-menu-1">
             <div class="common-frame">
                 <div class="logo">
@@ -691,278 +687,260 @@
 
     <!-- 메인 -->
     <main>
-        <!-- 히어로 배너 슬라이드 -->
-        <div class="swiper hero-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/pc-header1.jpg" alt="차분한 공간, 깊어진 취향">
-                    <img class="pad" src="./img/pad-header1.jpg" alt="차분한 공간, 깊어진 취향">
-                    <img class="mo" src="./img/mo-header1.jpg" alt="차분한 공간, 깊어진 취향">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/pc-header2.jpg" alt="차분한 공간, 깊어진 취향">
-                    <img class="pad" src="./img/pad-header2.jpg" alt="차분한 공간, 깊어진 취향">
-                    <img class="mo" src="./img/mo-header2.jpg" alt="차분한 공간, 깊어진 취향">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc" src="./img/pc-header3.jpg" alt="차분한 공간, 깊어진 취향">
-                    <img class="pad" src="./img/pad-header3.jpg" alt="차분한 공간, 깊어진 취향">
-                    <img class="mo" src="./img/mo-header3.jpg" alt="차분한 공간, 깊어진 취향">
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
+        <div class="hero-banner">
+            <a href="#">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./img/list-hero-mo.jpg">
+                    <source media="(max-width: 1200px)" srcset="./img/list-hero-pad.jpg">
+                    <img src="./img/list-hero-pc.jpg" alt="NUVOA 쇼핑몰 신상품 배너 이미지">
+                </picture>
+            </a>
         </div>
-
-        <script>
-            const station = new Swiper('.hero-slider', {
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                speed: 1000,
-                loop: true,
-            });
-        </script>
-
-        <div class="banner-line">
-            <div class="common-frame">
-                <span>NOTICE</span>
-                <h4>NUVOA의 새로운 소식과 NOTICE를 확인해보세요.</h4>
-                <p>브랜드의 다양한 소식과 업데이트 내용을 만나보실 수 있습니다.</p>
-                <a href="#">NEW <img src="./img/icn-arrow-right.svg" alt="공지사항 바로가기"></a>
-            </div>
-        </div>
-
         <section class="con1">
             <div class="common-frame">
                 <div class="title">
-                    <h1>Spaces for Everyday Living</h1>
-                    <p>거실부터 다이닝, 침실과 스토리지까지 일상의 공간을 더욱 아름답고 편안하게 완성합니다.</p>
+                    <h1>A New Beginning</h1>
+                    <p>새로운 공간의 시작, NUVOA의 신상품</p>
                 </div>
-                <div class="swiper cardlist-wrap">
-                    <ul class="cardlist swiper-wrapper">
-                        <li class="swiper-slide"><a href="#">
-                                <div class="cover">Living</div><img src="./img/section1-living.jpg" alt="Living">
-                            </a></li>
-                        <li class="swiper-slide"><a href="#">
-                                <div class="cover">Diving</div><img src="./img/section1-dining.jpg" alt="Dining">
-                            </a></li>
-                        <li class="swiper-slide"><a href="#">
-                                <div class="cover">Bedroom</div><img src="./img/section1-bedroom.jpg" alt="Bedroom">
-                            </a></li>
-                        <li class="swiper-slide"><a href="#">
-                                <div class="cover">Storage</div><img src="./img/section1-storage.jpg" alt="Storage">
-                            </a></li>
-                    </ul>
-                </div>
-                <script>
-                    const cardlist = new Swiper('.cardlist-wrap', {
-                        breakpoints: {
-                            0: {
-                                slidesPerView: 2.5,
-                                spaceBetween: 12,
-                            },
-                            340: {
-                                slidesPerView: 2.2,
-                                spaceBetween: 12,
-                            },
-                            768: {
-                                slidesPerView: 3.2,
-                                spaceBetween: 14,
-                            },
-                            1024: {
-                                slidesPerView: 4,
-                                spaceBetween: 16,
-                            },
-                        },
-                    });
-                </script>
-            </div>
-        </section>
+                <ul class="new-product grid-list">
+                    <!-- <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="product-txt">
+                                <div class="product-name">
+                                    <h4>OVE LINEN SOFA</h4>
+                                </div>
+                                <div class="product-desc">
+                                    <p>부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                </div>
+                                        <div class="pay-discount">
+                                            <div class="discount">30%</div>
+                                            <div class="pay"><b>3,000,000</b>원</div>
+                                        </div>
+                            </div>
+                        </a>
+                    </li> -->
 
-        <section class="con2">
-            <div class="common-frame">
-                <div class="title">
-                    <h1>Social</h1>
-                </div>
-                <div class="swiper storylist-wrap">
-                    <ul class="storylist swiper-wrapper">
-                        <li class="swiper-slide">
-                            <figure><img src="./img/section1-living.jpg" alt="하루의 끝이 가장 편안해지는 곳"></figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                </div>
-                                <h4>하루의 끝이 가장 편안해지는 곳</h4>
-                                <p>퇴근 후 소파에 앉아 책을 읽는 시간이 가장 좋아졌어요. 군더더기 없는 디자인이라 거실이 한층 차분해 보이고, 오래 앉아 있어도 편안해서 자연스럽게
-                                    머무는 시간이 길어졌습니다.</p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge">
-                                            <img src="./img/icn-heart-line.svg" alt="좋아요">
-                                            <span>87</span>
-                                        </span>
-                                        <img src="./img/section1-living.jpg" alt="LUNE 3-Seater SofaLiving">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">LUNE 3-Seater SofaLiving</div>
-                                        <div class="product-category">Living</div>
-                                        <div class="pay-original"><span>3,000,000</span>원</div>
-                                        <div class="pay-discount">
-                                            <div class="discount">30%</div>
-                                            <div class="pay"><b>3,000,000</b>원</div>
-                                        </div>
+                    <!-- <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/${product.pthumbFileName}" alt="${product.pname}">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">${product.pname}</h4>
+                                <p class="desc-1">${product.pdesc}</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>${formatNumber(product.price)}</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">${Math.round(product.pdiscount*100)}%</div>
+                                        <div class="pay"><b>${formatNumber(product.priceDiscount)}</b>원</div>
                                     </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure><img src="./img/section1-living.jpg" alt="식탁이 생활의 중심이 되었어요"></figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
                                 </div>
-                                <h4>식탁이 생활의 중심이 되었어요</h4>
-                                <p>식사만 하던 공간이 이제는 커피를 마시고 책을 읽는 작은 생활 공간이 되었어요. 나무의 따뜻한 질감 덕분에 집 전체가 조금 더 편안해진 것 같아요.
-                                </p>
                             </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge">
-                                            <img src="./img/icn-heart-line.svg" alt="좋아요">
-                                            <span>87</span>
-                                        </span>
-                                        <img src="./img/section1-living.jpg" alt="LUNE 3-Seater SofaLiving">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">LUNE 3-Seater SofaLiving</div>
-                                        <div class="product-category">Living</div>
-                                        <div class="pay-original"><span>3,000,000</span>원</div>
-                                        <div class="pay-discount">
-                                            <div class="discount">30%</div>
-                                            <div class="pay"><b>3,000,000</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure><img src="./img/section1-living.jpg" alt="침실이 가장 좋아하는 공간이 되었어요"></figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                </div>
-                                <h4>침실이 가장 좋아하는 공간이 되었어요</h4>
-                                <p>침실에는 최대한 많은 것을 두지 않으려고 했는데 NOA의 낮고 단정한 형태가 제가 원하던 분위기와 잘 맞았어요. 잠들기 전 공간을 바라보는 것만으로도
-                                    마음이 차분해집니다.</p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge">
-                                            <img src="./img/icn-heart-line.svg" alt="좋아요">
-                                            <span>87</span>
-                                        </span>
-                                        <img src="./img/section1-living.jpg" alt="LUNE 3-Seater SofaLiving">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">LUNE 3-Seater SofaLiving</div>
-                                        <div class="product-category">Living</div>
-                                        <div class="pay-original"><span>3,000,000</span>원</div>
-                                        <div class="pay-discount">
-                                            <div class="discount">30%</div>
-                                            <div class="pay"><b>3,000,000</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="swiper-slide">
-                            <figure><img src="./img/section1-living.jpg" alt="수납이 많아도 공간은 가벼울 수 있네요"></figure>
-                            <div class="story-txt">
-                                <div class="stars">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                    <img src="./img/icn-star.svg" alt="좋아요 별">
-                                </div>
-                                <h4>수납이 많아도 공간은 가벼울 수 있네요</h4>
-                                <p>수납공간이 부족해서 물건이 자꾸 밖으로 나와 있었는데 RENO를 사용하면서 공간이 훨씬 정돈됐어요. 수납장 자체도 깔끔해서 거실이 답답해 보이지
-                                    않습니다.</p>
-                            </div>
-                            <div class="story-product">
-                                <a href="#">
-                                    <figure>
-                                        <span class="like-badge">
-                                            <img src="./img/icn-heart-line.svg" alt="좋아요">
-                                            <span>87</span>
-                                        </span>
-                                        <img src="./img/section1-living.jpg" alt="LUNE 3-Seater SofaLiving">
-                                    </figure>
-                                    <div class="story-product-txt">
-                                        <div class="product-name">LUNE 3-Seater SofaLiving</div>
-                                        <div class="product-category">Living</div>
-                                        <div class="pay-original"><span>3,000,000</span>원</div>
-                                        <div class="pay-discount">
-                                            <div class="discount">30%</div>
-                                            <div class="pay"><b>3,000,000</b>원</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <script>
-                    const reviewStory = new Swiper('.storylist-wrap', {
-                        breakpoints: {
-                            0: {
-                                slidesPerView: 2.5,
-                                spaceBetween: 12,
-                            },
-                            340: {
-                                slidesPerView: 2.2,
-                                spaceBetween: 12,
-                            },
-                            768: {
-                                slidesPerView: 3.2,
-                                spaceBetween: 14,
-                            },
-                            1024: {
-                                slidesPerView: 4,
-                                spaceBetween: 16,
-                            },
-                        },
-                    });
-                </script>
-            </div>
-        </section>
+                        </a>
+                    </li>    -->
 
-        <section class="con3">
-            <div class="common-frame">
-                <div class="title">
-                    <h1>Special SALE</h1>
-                </div>
-                <ul class="sale grid-list">
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">OVE LINEN SOFA</h4>
+                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>300,000</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">20%</div>
+                                        <div class="pay"><b>300,000</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">OVE LINEN SOFA</h4>
+                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>300,000</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">20%</div>
+                                        <div class="pay"><b>300,000</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">OVE LINEN SOFA</h4>
+                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>300,000</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">20%</div>
+                                        <div class="pay"><b>300,000</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">OVE LINEN SOFA</h4>
+                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>300,000</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">20%</div>
+                                        <div class="pay"><b>300,000</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">OVE LINEN SOFA</h4>
+                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>300,000</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">20%</div>
+                                        <div class="pay"><b>300,000</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">OVE LINEN SOFA</h4>
+                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>300,000</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">20%</div>
+                                        <div class="pay"><b>300,000</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">OVE LINEN SOFA</h4>
+                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>300,000</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">20%</div>
+                                        <div class="pay"><b>300,000</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">OVE LINEN SOFA</h4>
+                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>300,000</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">20%</div>
+                                        <div class="pay"><b>300,000</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">OVE LINEN SOFA</h4>
+                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>300,000</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">20%</div>
+                                        <div class="pay"><b>300,000</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">OVE LINEN SOFA</h4>
+                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>300,000</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">20%</div>
+                                        <div class="pay"><b>300,000</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                            <figure>
+                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
+                            </figure>
+                            <div class="sale-txt">
+                                <h4 class="title-1">OVE LINEN SOFA</h4>
+                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
+                                <div class="pay-frame">
+                                    <div class="pay-original"><span>300,000</span>원</div>
+                                    <div class="pay-discount">
+                                        <div class="discount">20%</div>
+                                        <div class="pay"><b>300,000</b>원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+
                 </ul>
             </div>
         </section>
@@ -1031,7 +1009,6 @@
             <div class="copy">© 2026 NUVOA. All Rights Reserved. 취업 용도의 포트폴리오 홈페이지입니다.</div>
         </div>
     </footer>
-
 </body>
 
 </html>

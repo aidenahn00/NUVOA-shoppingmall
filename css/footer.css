@@ -42,10 +42,9 @@ footer .common-frame {
 }
 .foot2 {
     width: 450px;
-    border: 1px sloid red;
 }
 .logof img {
-    width: 6.25rem;
+    margin-bottom: 1rem;
 }
 .slogan {
     font-style: var(--fs-h3);
@@ -82,6 +81,38 @@ footer .common-frame {
     .foot-navi {
         flex-direction: column;
         justify-content: initial;
-        gap: 28px;
+        gap: 2rem;
+    }
+    .coinfo {
+        width: auto;
+    }
+    .foot2 {
+        width: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        text-align: center;
+
+        max-width: 474px;
+        align-self: center;
+    }
+    .cstime {
+        width: auto;
+    }
+}
+@media (max-width: 768px) {
+    .footmenu {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+        gap: 1rem 1rem;
+    }
+    .coinfo {
+        grid-template-columns: repeat(2, minmax(50px, 1fr));        
+    }
+    .cscenter {
+        justify-content: flex-start;
     }
 }

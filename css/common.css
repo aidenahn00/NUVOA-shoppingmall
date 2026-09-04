@@ -57,6 +57,8 @@
 }
 
 
+
+
 html {
     font-size: var(--fs-pc);
     line-height: var(--lh1);
@@ -64,20 +66,33 @@ html {
     font-family: 'Pretendard', sans-serif;
     font-weight: var(--fw1);
 }
-
 .common-frame {
     padding: 0 var(--space-2x-large);
 }
-
-
 main {
     margin-top: 150px;
 }
 @media (max-width: 1024px) {
+    html {
+        font-size: var(--fs-pad);
+    }
+    .common-frame {
+        padding: 0 var(--space-x-large);
+    }
     main {
         margin-top: 5rem;
     }
 }
+@media (max-width: 768px) {
+    html {
+        font-size: var(--fs-mo);
+    }
+    .common-frame {
+        padding: 0 var(--space-normal);
+    }
+}
+
+
 
 
 .pc {
@@ -90,47 +105,17 @@ main {
     display: none;
 }
 @media (max-width: 1024px) {
-
-    html {
-        font-size: var(--fs-pad);
-    }
-
-    .common-frame {
-        padding: 0 var(--space-x-large);
-    }
-
     .pc {
         display: none;
     }
-
     .pad {
         display: block;
     }
-
     .mo {
         display: none;
     }
-
 }
-
-
-@media (max-width: 860px) {
-    .banner-line .common-frame span,
-    .banner-line .common-frame p {
-        display: none;
-    }
-}
-
 @media (max-width: 768px) {
-
-    html {
-        font-size: var(--fs-mo);
-    }
-
-    .common-frame {
-        padding: 0 var(--space-normal);
-    }
-
     .pc {
         display: none;
     }
@@ -142,10 +127,12 @@ main {
     .mo {
         display: block;
     }
-
 }
 
 
+
+
+/* 기본 타이포그래피 */
 h1 {
     font-size: var(--fs-h1);
 }
@@ -165,7 +152,75 @@ p {
 
 
 
+/* main 리스트 프레임 하단 패딩 */
+main .common-frame {
+    padding: 0 var(--space-2x-large) 6rem;
+}
+@media (max-width: 1024px) {
+    main .common-frame {
+        padding: 0 var(--space-x-large) 6rem;
+    }
+}
+@media (max-width: 768px) {
+    main .common-frame {
+        padding: 0 var(--space-normal) 6rem;
+    }
+}
+
+
+
+
+/* contents title */
+.common-frame .title {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--gray-800);
+}
+.common-frame .title h1 {
+    display: block;
+    font-size: var(--fs-h1);
+    font-weight: var(--fw2);
+}
+.common-frame .title p {
+    max-width: 283px;
+    align-self: center;
+    width: 100%;
+    line-height: 1.4;
+}
+
+
+
+
 /* 리스트 공통 */
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    gap: 3rem 1rem;
+}
+@media (max-width: 768px) {
+    .grid-list {
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+    }
+}
+.grid-list li figure {
+    line-height: 0;
+    margin-bottom: 1.75rem;
+}
+.grid-list li figure img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.grid-list .sale-txt {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
 .title-1 {
     font-weight: var(--fw2);
 }
@@ -215,4 +270,15 @@ p {
 }
 .like-badge.noab {
     position: initial;
+}
+
+
+
+
+/* 띠 배너 ui 조정 */
+@media (max-width: 860px) {
+    .banner-line .common-frame span,
+    .banner-line .common-frame p {
+        display: none;
+    }
 }
