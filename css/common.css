@@ -282,3 +282,10 @@ main .common-frame {
         display: none;
     }
 }
+
+
+
+
+main>section {
+    padding: var(--space-3x-large) 0;
+}
