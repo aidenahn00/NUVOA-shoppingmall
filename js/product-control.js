@@ -17,7 +17,7 @@ let result = product.map(product => `
                                     <div class="pay-original"><span>${formatNumber(product.price)}</span>원</div>
                                     <div class="pay-discount">
                                         <div class="discount">${Math.round(product.pdiscount*100)}%</div>
-                                        <div class="pay"><b>${formatNumber(product.priceDiscount)}</b>원</div>
+                                        <div class="pay"><b>${formatNumber(Math.round(product.priceDiscount))}</b>원</div>
                                     </div>
                                 </div>
                                 <span class="like-badge noab">

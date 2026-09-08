@@ -13,8 +13,12 @@
     <link rel="stylesheet" href="./css/list.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <script src="./js/list.js" defer></script>
     <script src="./js/header.js" defer></script>
+    <script src="./js/list.js" defer></script>
+    
+    <!-- 제품 정보 -->
+    <script src="./js/new-product.js" defer></script>
+    <script src="./js/product-control-new.js" defer></script>
 </head>
 
 <body>
@@ -703,45 +707,6 @@
                     <p>새로운 공간의 시작, NUVOA의 신상품</p>
                 </div>
                 <ul class="new-product grid-list">
-                    <!-- <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
-                            </figure>
-                            <div class="product-txt">
-                                <div class="product-name">
-                                    <h4>OVE LINEN SOFA</h4>
-                                </div>
-                                <div class="product-desc">
-                                    <p>부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
-                                </div>
-                                        <div class="pay-discount">
-                                            <div class="discount">30%</div>
-                                            <div class="pay"><b>3,000,000</b>원</div>
-                                        </div>
-                            </div>
-                        </a>
-                    </li> -->
-
-                    <!-- <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/${product.pthumbFileName}" alt="${product.pname}">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">${product.pname}</h4>
-                                <p class="desc-1">${product.pdesc}</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original"><span>${formatNumber(product.price)}</span>원</div>
-                                    <div class="pay-discount">
-                                        <div class="discount">${Math.round(product.pdiscount*100)}%</div>
-                                        <div class="pay"><b>${formatNumber(product.priceDiscount)}</b>원</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>    -->
-
                     <li>
                         <a href="#">
                             <figure>
@@ -761,186 +726,6 @@
                         </a>
                     </li>   
                     <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">OVE LINEN SOFA</h4>
-                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original"><span>300,000</span>원</div>
-                                    <div class="pay-discount">
-                                        <div class="discount">20%</div>
-                                        <div class="pay"><b>300,000</b>원</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>   
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">OVE LINEN SOFA</h4>
-                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original"><span>300,000</span>원</div>
-                                    <div class="pay-discount">
-                                        <div class="discount">20%</div>
-                                        <div class="pay"><b>300,000</b>원</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>   
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">OVE LINEN SOFA</h4>
-                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original"><span>300,000</span>원</div>
-                                    <div class="pay-discount">
-                                        <div class="discount">20%</div>
-                                        <div class="pay"><b>300,000</b>원</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>   
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">OVE LINEN SOFA</h4>
-                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original"><span>300,000</span>원</div>
-                                    <div class="pay-discount">
-                                        <div class="discount">20%</div>
-                                        <div class="pay"><b>300,000</b>원</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>   
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">OVE LINEN SOFA</h4>
-                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original"><span>300,000</span>원</div>
-                                    <div class="pay-discount">
-                                        <div class="discount">20%</div>
-                                        <div class="pay"><b>300,000</b>원</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>   
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">OVE LINEN SOFA</h4>
-                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original"><span>300,000</span>원</div>
-                                    <div class="pay-discount">
-                                        <div class="discount">20%</div>
-                                        <div class="pay"><b>300,000</b>원</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>   
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">OVE LINEN SOFA</h4>
-                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original"><span>300,000</span>원</div>
-                                    <div class="pay-discount">
-                                        <div class="discount">20%</div>
-                                        <div class="pay"><b>300,000</b>원</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>   
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">OVE LINEN SOFA</h4>
-                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original"><span>300,000</span>원</div>
-                                    <div class="pay-discount">
-                                        <div class="discount">20%</div>
-                                        <div class="pay"><b>300,000</b>원</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>   
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">OVE LINEN SOFA</h4>
-                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original"><span>300,000</span>원</div>
-                                    <div class="pay-discount">
-                                        <div class="discount">20%</div>
-                                        <div class="pay"><b>300,000</b>원</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>   
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/new1.jpg" alt="OVE LINEN SOFA">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">OVE LINEN SOFA</h4>
-                                <p class="desc-1">부드러운 린넨 패브릭과 낮고 넓은 실루엣으로 편안한 휴식을 완성하는 3인용 소파</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original"><span>300,000</span>원</div>
-                                    <div class="pay-discount">
-                                        <div class="discount">20%</div>
-                                        <div class="pay"><b>300,000</b>원</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>   
-
                 </ul>
             </div>
         </section>
