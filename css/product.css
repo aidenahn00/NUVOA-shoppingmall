@@ -163,3 +163,37 @@
     color: var(--gray-0);
     background-color: var(--nuvoaorange-500);
 }
+
+@media (max-width: 1024px) {
+    .benefit {
+        grid-template-columns: 90px 1fr 110px;
+    }
+    .benefit-list li {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 1rem 1rem;
+        margin-bottom: 1rem;
+    }
+    .train-horizontal figure {
+        height: 6rem;
+    }
+    .info-product .common-frame {
+        flex-direction: column;
+    }
+    .product-img {
+        width: auto;
+    }
+    .product-txt {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 900px) { }
+
+@media (max-width: 768px) { }
+
+@media (max-width: 500px) {
+    .benefit {
+        grid-template-columns: initial;
+    }
+}
