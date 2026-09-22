@@ -4,12 +4,9 @@ function formatNumber(num) {
     return Number(num).toLocaleString('ko-KR');
 }
 
-
-
-
 let result = newProductArray.map(product => `
                     <li>
-                        <a href="#">
+                        <a href="./product.html?pid=${product.pid}">
                             <figure>
                                 <img src="./img/${product.pthumbFileName}" alt="${product.pname}">
                             </figure>
@@ -26,7 +23,6 @@ let result = newProductArray.map(product => `
                                 </div>
                             </div>
                         </a>
-                    </li> 
-    `).join('');
+                    </li>`).join('');
 
 document.querySelector('.new-product').innerHTML = result;
