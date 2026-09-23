@@ -1,7 +1,6 @@
 /* 슬라이더 초기화 */
 .hero-slider {
     width: 100%;
-    height: 688px;
 }
 @media (max-width: 1024px) {
     .hero-slider {
@@ -47,6 +46,7 @@
     color: var(--gray-0);
     gap: 7.5rem;
     height: 5rem;
+    padding-bottom: 0;
 }
 .banner-line span {
     font-size: var(--fs-body2);
@@ -136,6 +136,10 @@
     border-radius: .5rem;
     overflow: hidden;
     margin-bottom: 1.75rem;
+}
+.storylist li > figure img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 .story-txt {
     border-bottom: 1px solid dotted var(--gray-300);

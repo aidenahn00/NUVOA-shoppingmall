@@ -175,7 +175,6 @@ main .common-frame {
 /* contents title */
 .common-frame .title {
     text-align: center;
-    margin-top: 6rem;
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
