@@ -55,14 +55,9 @@
 
 <body>
     <script>
-        const productInfo = newProductArray.find(item=>{ return item.pid === Number(getParam('pid'))});
-        console.log(productInfo);
-
-        const reviewInfo = reviewArray.filter(item=>{
-            return item.pid === Number(getParameter('pid'));
-        });
+        const productInfo = newProductArray.find(item=>item.pid === Number(getParam('pid')));
+        const reviewInfo = reviewArray.filter(item=>item.pid === Number(getParam('pid')));
     </script>
-
     <!-- 데스크탑용 헤더 -->
     <header class="pc">
         <div class="header-top">
