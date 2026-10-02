@@ -25,3 +25,48 @@ document.addEventListener('click', (event) => {
     depth2Menus.forEach((menu) => menu.classList.remove('on'));
     depth2Menu.classList.add('on');
 });
+
+let previousScrollY = window.scrollY;
+let lastScrollDirection = null;
+let isHeaderHovered = false;
+
+document.addEventListener('mouseover', (event) => {
+    if (!(event.target instanceof Element)) return;
+
+    const header = event.target.closest('header');
+    if (!header || (event.relatedTarget instanceof Node && header.contains(event.relatedTarget))) return;
+
+    isHeaderHovered = true;
+    header.classList.remove('on');
+});
+
+document.addEventListener('mouseout', (event) => {
+    if (!(event.target instanceof Element)) return;
+
+    const header = event.target.closest('header');
+    if (!header || (event.relatedTarget instanceof Node && header.contains(event.relatedTarget))) return;
+
+    isHeaderHovered = false;
+    if (window.scrollY > 0 && lastScrollDirection === 'down') {
+        header.classList.add('on');
+    }
+});
+
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY < previousScrollY) {
+        lastScrollDirection = 'up';
+    } else if (currentScrollY > previousScrollY) {
+        lastScrollDirection = 'down';
+    }
+
+    if (header && !isHeaderHovered && (currentScrollY <= 0 || currentScrollY < previousScrollY)) {
+        header.classList.remove('on');
+    } else if (header && !isHeaderHovered && currentScrollY > previousScrollY) {
+        header.classList.add('on');
+    }
+
+    previousScrollY = currentScrollY;
+}, { passive: true });

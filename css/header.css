@@ -11,8 +11,21 @@ header {
     right: 0;
     left: 0;
     z-index: 1000;
+
     background-color: #fff;
+    
+    transition: transform 0.3s ease;
 }
+header.on {
+    transform: translateY(-104px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    header {
+        transition: none;
+    }
+}
+
 .header-top {
     height: 100px;
 }
