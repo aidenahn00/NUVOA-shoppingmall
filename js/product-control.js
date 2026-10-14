@@ -11,7 +11,7 @@ let result = product.map(product => `
                                 <img src="./img/${product.pthumbFileName}" alt="${product.pname}">
                             </figure>
                             <div class="sale-txt">
-                                <h4 class="title-1">${product.pname}</h4>
+                                <h2 class="title-1">${product.pname}</h2>
                                 <p class="desc-1">${product.pdesc}</p>
                                 <div class="pay-frame">
                                     <div class="pay-original"><span>${formatNumber(product.price)}</span>원</div>

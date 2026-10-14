@@ -51,8 +51,9 @@
 .banner-line span {
     font-size: var(--fs-body2);
 }
-.banner-line h4 {
+.banner-line h2 {
     font-weight: var(--fw2);
+    font-size: var(--fs-h4);
 }
 .banner-line a {
     font-size: var(--fs-body2);
@@ -149,8 +150,9 @@
     gap: .5rem;
     margin-bottom: 2rem;
 }
-.story-txt h4 {
+.story-txt h2 {
     font-weight: var(--fw2);
+    font-size: var(--fs-h4);
 }
 .story-txt p {
     display: -webkit-box;

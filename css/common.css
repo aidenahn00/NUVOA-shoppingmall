@@ -224,6 +224,7 @@ main .common-frame {
 }
 .title-1 {
     font-weight: var(--fw2);
+    font-size: var(--fs-h4);
 }
 .desc-1 {
     display: -webkit-box;

@@ -118,8 +118,9 @@ header.on {
     flex: 1;
 }
 
-.gnb2depth .common-frame>section h4 {
+.gnb2depth .common-frame>section h2 {
     margin-bottom: 1.5rem;
+    font-size: var(--fs-h4);
 }
 
 .gnb2depth .common-frame>section ul {
@@ -257,8 +258,9 @@ header.on {
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem 1rem;
     }
-    .gnb2depth-smart h4 {
+    .gnb2depth-smart h2 {
         font-weight: var(--fw2);
+        font-size: var(--fs-h4);
         margin-bottom: 1.428rem;
         padding-bottom: 1.428rem;
 
