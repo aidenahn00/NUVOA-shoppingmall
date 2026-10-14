@@ -200,9 +200,10 @@
 #product-detail-1 {
     text-align: center;
 }
-#product-detail-2 h2 {
+#product-detail-2 h3 {
     text-align: center;
     font-weight: var(--fw2);
+    font-size: var(--fs-h2);
     margin-bottom: 3rem;
 }
 .review {
@@ -308,9 +309,10 @@
     gap: .25rem;
 }
 
-#product-detail-3 h2 {
+#product-detail-3 h3 {
     text-align: center;
     font-weight: var(--fw2);
+    font-size: var(--fs-h2);
     margin-bottom: 3rem;
 }
 .product-table {

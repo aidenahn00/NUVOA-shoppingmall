@@ -4,7 +4,7 @@ let template = '';
 if (reviewInfo.length === 0) {
     // 리뷰가 없는 경우
     const productdetail2 = document.querySelector('#product-detail-2');
-    productdetail2.innerHTML = `<h2>상품 리뷰</h2><div class="no-review">상품에 대한 리뷰가 없습니다.</div>`;
+    productdetail2.innerHTML = `<h3>상품 리뷰</h3><div class="no-review">상품에 대한 리뷰가 없습니다.</div>`;
 } else {
     // 리뷰가 있는 경우
     reviewInfo.forEach(item => {
